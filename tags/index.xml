@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Gaurav Mahajan</title>
-    <link>https://example.com/tags/</link>
+    <link>https://gomahajan.github.io/tags/</link>
     <description>Recent content in Tags on Gaurav Mahajan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,46 +12,46 @@
     
     <item>
       <title>Ai</title>
-      <link>https://example.com/tags/ai/</link>
+      <link>https://gomahajan.github.io/tags/ai/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/ai/</guid>
+      <guid>https://gomahajan.github.io/tags/ai/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Proof</title>
-      <link>https://example.com/tags/proof/</link>
+      <link>https://gomahajan.github.io/tags/proof/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/proof/</guid>
+      <guid>https://gomahajan.github.io/tags/proof/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Regression</title>
-      <link>https://example.com/tags/regression/</link>
+      <link>https://gomahajan.github.io/tags/regression/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/regression/</guid>
+      <guid>https://gomahajan.github.io/tags/regression/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tips</title>
-      <link>https://example.com/tags/tips/</link>
+      <link>https://gomahajan.github.io/tags/tips/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/tips/</guid>
+      <guid>https://gomahajan.github.io/tags/tips/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Whatis</title>
-      <link>https://example.com/tags/whatis/</link>
+      <link>https://gomahajan.github.io/tags/whatis/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/tags/whatis/</guid>
+      <guid>https://gomahajan.github.io/tags/whatis/</guid>
       <description></description>
     </item>
     

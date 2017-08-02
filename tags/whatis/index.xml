@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Whatis on Gaurav Mahajan</title>
-    <link>https://example.com/tags/whatis/</link>
+    <link>https://gomahajan.github.io/tags/whatis/</link>
     <description>Recent content in Whatis on Gaurav Mahajan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>What is Linear Models and Least Squares?</title>
-      <link>https://example.com/post/what-is-least-squares/</link>
+      <link>https://gomahajan.github.io/post/what-is-least-squares/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/what-is-least-squares/</guid>
+      <guid>https://gomahajan.github.io/post/what-is-least-squares/</guid>
       <description>&lt;p&gt;For the regression problem, the linear model, as its name implies, assumes a linear
 relationship. Given a vector of inputs
 \( X^T = (X_1, X_2,\ldots,X_p)\), we predict the output
@@ -35,10 +35,10 @@ to minimize the residual sum of squares
     
     <item>
       <title>What is Nearest Neighbor Methods?</title>
-      <link>https://example.com/post/what-is-nearest-neighbors/</link>
+      <link>https://gomahajan.github.io/post/what-is-nearest-neighbors/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/what-is-nearest-neighbors/</guid>
+      <guid>https://gomahajan.github.io/post/what-is-nearest-neighbors/</guid>
       <description>&lt;p&gt;For the regression problem, nearest-neighbor methods use those observations in
 the training set \(T\) closest in input space to \(x\)
 to form \(\hat{Y}\) . Specifically, the \(k\)-nearest neighbor fit
@@ -52,10 +52,10 @@ for \(\hat{Y}\) is defined as follows:
     
     <item>
       <title>What is Regression Problem?</title>
-      <link>https://example.com/post/what-is-regression-problem/</link>
+      <link>https://gomahajan.github.io/post/what-is-regression-problem/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/what-is-regression-problem/</guid>
+      <guid>https://gomahajan.github.io/post/what-is-regression-problem/</guid>
       <description>&lt;p&gt;The task of modeling how the value
 of a response \(y\) changes in response to changes in an
 explanatory variable \(x\) is known as regression/regression problem.&lt;/p&gt;
@@ -68,10 +68,10 @@ of the concentrations of reactants, the temperature, and the pressure.&lt;/p&gt;
     
     <item>
       <title>What is Bayesian Perspective?</title>
-      <link>https://example.com/post/what-is-bayesian-perspective/</link>
+      <link>https://gomahajan.github.io/post/what-is-bayesian-perspective/</link>
       <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/what-is-bayesian-perspective/</guid>
+      <guid>https://gomahajan.github.io/post/what-is-bayesian-perspective/</guid>
       <description>&lt;p&gt;prior probability
 posterior probability&lt;/p&gt;
 </description>

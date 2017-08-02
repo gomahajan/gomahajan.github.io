@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Regression on Gaurav Mahajan</title>
-    <link>https://example.com/tags/regression/</link>
+    <link>https://gomahajan.github.io/tags/regression/</link>
     <description>Recent content in Regression on Gaurav Mahajan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,10 +12,10 @@
     
     <item>
       <title>Finding Regression Function</title>
-      <link>https://example.com/post/finding-regression-function/</link>
+      <link>https://gomahajan.github.io/post/finding-regression-function/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/finding-regression-function/</guid>
+      <guid>https://gomahajan.github.io/post/finding-regression-function/</guid>
       <description>&lt;p&gt;Let
 \(X\in R^P\) denote a real valued random input vector, and \(Y\in R\) a real valued random output variable, with joint distribution \(Pr(X,Y)\).
 We seek a function \(f(X)\) for predicting \(Y\) given values of the input \(X\). This theory requires a &lt;em&gt;loss function&lt;/em&gt; \(L(Y,f(X))\) for penalizing errors in prediction, and by far the most common and convenient is &lt;em&gt;squared error loss:&lt;/em&gt; \(L(Y,f(X))=(Y-f(X))^2\). This leads us to a criterion for choosing \(f\),&lt;/p&gt;
@@ -48,10 +48,10 @@ the conditional expectation, also known as the &lt;em&gt;regression&lt;/em&gt; f
     
     <item>
       <title>From Least Squares to Nearest Neighbors</title>
-      <link>https://example.com/post/least-squares-and-nearest-neighbors/</link>
+      <link>https://gomahajan.github.io/post/least-squares-and-nearest-neighbors/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://example.com/post/least-squares-and-nearest-neighbors/</guid>
+      <guid>https://gomahajan.github.io/post/least-squares-and-nearest-neighbors/</guid>
       <description>&lt;p&gt;Let&#39;s evaluate two simple but powerful prediction methods: the linear model fit by least squares and the \(k\)-nearest-neighbor prediction rule on a simple regression problem. We will see how the linear model makes huge assumptions about structure and yields stable but possibly inaccurate predictions. The method of \(k\)-nearest neighbors, however, makes very mild structural assumptions: its predictions are often accurate but can be unstable.&lt;/p&gt;
 
 &lt;h2 id=&#34;training-data&#34;&gt;Training Data&lt;/h2&gt;
