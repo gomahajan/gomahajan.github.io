@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Whatis on Gaurav Mahajan</title>
+    <link>https://example.com/tags/whatis/</link>
+    <description>Recent content in Whatis on Gaurav Mahajan</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Gaurav Mahajan</copyright>
+    <lastBuildDate>Tue, 01 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/whatis/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>What is Linear Models and Least Squares?</title>
+      <link>https://example.com/post/what-is-least-squares/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/what-is-least-squares/</guid>
+      <description>&lt;p&gt;For the regression problem, the linear model, as its name implies, assumes a linear
+relationship. Given a vector of inputs
+\( X^T = (X_1, X_2,\ldots,X_p)\), we predict the output
+\(Y\) via the model
+&lt;span  class=&#34;math&#34;&gt;\( \hat{Y} = \hat{\beta_0} + \sum_{j=1}^{p}X_j\hat{\beta_j}\)&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;By including the constant variable \(1\) in \(X\),
+including \(\hat{\beta_0}\) in the vector of coefficients
+\(\hat{\beta}\), we can write the linear model in vector form as an inner product
+&lt;span  class=&#34;math&#34;&gt;\(\hat{Y} = X^T\hat{\beta}\)&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;To fit the linear model to a set of training data, we use the method of least squares. In this approach, we pick the coefficients \(\beta\)
+to minimize the residual sum of squares
+&lt;span  class=&#34;math&#34;&gt;\( RSS(\beta) = \sum_{i=1}^{N}(y_i-x_{i}^{T}\beta)^2\)&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What is Nearest Neighbor Methods?</title>
+      <link>https://example.com/post/what-is-nearest-neighbors/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/what-is-nearest-neighbors/</guid>
+      <description>&lt;p&gt;For the regression problem, nearest-neighbor methods use those observations in
+the training set \(T\) closest in input space to \(x\)
+to form \(\hat{Y}\) . Specifically, the \(k\)-nearest neighbor fit
+for \(\hat{Y}\) is defined as follows:
+&lt;span  class=&#34;math&#34;&gt;\(\hat{Y}(x)= \dfrac{1}{k} \sum_{x_i\in N_k(x)} y_i\)&lt;/span&gt;&lt;/p&gt;
+
+&lt;p&gt;where \(N_k(x)\) is the neighborhood of \(x\) defined by the
+\(k\) closest points \(x_i\) in the training sample.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What is Regression Problem?</title>
+      <link>https://example.com/post/what-is-regression-problem/</link>
+      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/what-is-regression-problem/</guid>
+      <description>&lt;p&gt;The task of modeling how the value
+of a response \(y\) changes in response to changes in an
+explanatory variable \(x\) is known as regression/regression problem.&lt;/p&gt;
+
+&lt;p&gt;An example of a regression problem would be the prediction
+of the yield in a chemical manufacturing process in which the inputs consist
+of the concentrations of reactants, the temperature, and the pressure.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What is Bayesian Perspective?</title>
+      <link>https://example.com/post/what-is-bayesian-perspective/</link>
+      <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://example.com/post/what-is-bayesian-perspective/</guid>
+      <description>&lt;p&gt;prior probability
+posterior probability&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
