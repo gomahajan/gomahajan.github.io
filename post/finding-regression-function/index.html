@@ -25,6 +25,8 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
   <link rel="stylesheet" href="/css/hugo-academic.css">
   
+  <link rel="stylesheet" href="/css/custom.css">
+  
 
   
 
@@ -194,9 +196,15 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      <p>Let
+      <p>In this post, we will discuss how the regression function for squared error loss function is <span  class="math">\(f(x)=E(Y|X=x)\)</span>.</p>
+
+<p></p>
+
+<p>Let
 \(X\in R^P\) denote a real valued random input vector, and \(Y\in R\) a real valued random output variable, with joint distribution \(Pr(X,Y)\).
-We seek a function \(f(X)\) for predicting \(Y\) given values of the input \(X\). This theory requires a <em>loss function</em> \(L(Y,f(X))\) for penalizing errors in prediction, and by far the most common and convenient is <em>squared error loss:</em> \(L(Y,f(X))=(Y-f(X))^2\). This leads us to a criterion for choosing \(f\),</p>
+We seek a function \(f(X)\) for predicting \(Y\) given values of the input \(X\). This theory requires a <em>loss function</em> \(L(Y,f(X))\) for penalizing errors in prediction, and we will use <em>squared error loss</em>: \(L(Y,f(X))=(Y-f(X))^2\).</p>
+
+<p>This leads us to a criterion for choosing \(f\),</p>
 
 <p>\begin{align*}
 EPE(f)&amp; = E(Y-f(X))^2\\<br>
@@ -217,11 +225,10 @@ E[Y-t]^2 &amp; = E[Y-\mu + \mu-t]^2\\<br>
 &amp; \geq E[Y-\mu]^2
 \end{align*}</p>
 
-<p>Applied to conditional distribution of \(Y\) given \(X=x\), this gives us that <span  class="math">\( E_{Y\|X}([Y-E(Y\|X=x)]^2\|X=x) \leq E_{Y\|X} ([Y-c]^2\|X=x)\)</span> for all estimates \(c\).</p>
+<p>Applied to conditional distribution of \(Y\) given \(X=x\), this gives us that <span  class="math">\(E_{Y|X}([Y-E(Y|X=x)]^2|X=x) \leq E_{Y|X} ([Y-c]^2|X=x)\)</span> for all estimates \(c\).</p>
 
 <p>Hence, proved that the solution for equation \eqref{epe} above is <span  class="math">\(f(x)=E(Y|X=x)\)</span>
 the conditional expectation, also known as the <em>regression</em> function.</p>
-
     </div>
   </div>
 

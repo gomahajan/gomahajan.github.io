@@ -16,9 +16,15 @@
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gomahajan.github.io/post/finding-regression-function/</guid>
-      <description>&lt;p&gt;Let
+      <description>&lt;p&gt;In this post, we will discuss how the regression function for squared error loss function is &lt;span  class=&#34;math&#34;&gt;\(f(x)=E(Y|X=x)\)&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Let
 \(X\in R^P\) denote a real valued random input vector, and \(Y\in R\) a real valued random output variable, with joint distribution \(Pr(X,Y)\).
-We seek a function \(f(X)\) for predicting \(Y\) given values of the input \(X\). This theory requires a &lt;em&gt;loss function&lt;/em&gt; \(L(Y,f(X))\) for penalizing errors in prediction, and by far the most common and convenient is &lt;em&gt;squared error loss:&lt;/em&gt; \(L(Y,f(X))=(Y-f(X))^2\). This leads us to a criterion for choosing \(f\),&lt;/p&gt;
+We seek a function \(f(X)\) for predicting \(Y\) given values of the input \(X\). This theory requires a &lt;em&gt;loss function&lt;/em&gt; \(L(Y,f(X))\) for penalizing errors in prediction, and we will use &lt;em&gt;squared error loss&lt;/em&gt;: \(L(Y,f(X))=(Y-f(X))^2\).&lt;/p&gt;
+
+&lt;p&gt;This leads us to a criterion for choosing \(f\),&lt;/p&gt;
 
 &lt;p&gt;\begin{align*}
 EPE(f)&amp;amp; = E(Y-f(X))^2\\&lt;br&gt;
@@ -39,11 +45,10 @@ E[Y-t]^2 &amp;amp; = E[Y-\mu + \mu-t]^2\\&lt;br&gt;
 &amp;amp; \geq E[Y-\mu]^2
 \end{align*}&lt;/p&gt;
 
-&lt;p&gt;Applied to conditional distribution of \(Y\) given \(X=x\), this gives us that &lt;span  class=&#34;math&#34;&gt;\( E_{Y\|X}([Y-E(Y\|X=x)]^2\|X=x) \leq E_{Y\|X} ([Y-c]^2\|X=x)\)&lt;/span&gt; for all estimates \(c\).&lt;/p&gt;
+&lt;p&gt;Applied to conditional distribution of \(Y\) given \(X=x\), this gives us that &lt;span  class=&#34;math&#34;&gt;\(E_{Y|X}([Y-E(Y|X=x)]^2|X=x) \leq E_{Y|X} ([Y-c]^2|X=x)\)&lt;/span&gt; for all estimates \(c\).&lt;/p&gt;
 
 &lt;p&gt;Hence, proved that the solution for equation \eqref{epe} above is &lt;span  class=&#34;math&#34;&gt;\(f(x)=E(Y|X=x)\)&lt;/span&gt;
-the conditional expectation, also known as the &lt;em&gt;regression&lt;/em&gt; function.&lt;/p&gt;
-</description>
+the conditional expectation, also known as the &lt;em&gt;regression&lt;/em&gt; function.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -52,7 +57,9 @@ the conditional expectation, also known as the &lt;em&gt;regression&lt;/em&gt; f
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gomahajan.github.io/post/first-few-weeks-in-phd/</guid>
-      <description>&lt;p&gt;It makes sense to plan for the first few weeks in PhD as it will help ramping up for the new life as a PhD. Following are the few tips recommended by people who went through this period:&lt;/p&gt;
+      <description>&lt;p&gt;This post discusses the few tips recommended by people for first few weeks in PhD.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;formulate-what-you-plan-to-work-on&#34;&gt;Formulate what you plan to work on&lt;/h2&gt;
 
@@ -72,8 +79,7 @@ the conditional expectation, also known as the &lt;em&gt;regression&lt;/em&gt; f
 
 &lt;h2 id=&#34;check-a-previous-thesis-of-the-group&#34;&gt;Check a previous thesis of the group&lt;/h2&gt;
 
-&lt;p&gt;Get an idea of who did what in your group. Learn how a PhD thesis is structured in your group.&lt;/p&gt;
-</description>
+&lt;p&gt;Get an idea of who did what in your group. Learn how a PhD thesis is structured in your group.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -82,7 +88,12 @@ the conditional expectation, also known as the &lt;em&gt;regression&lt;/em&gt; f
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gomahajan.github.io/post/least-squares-and-nearest-neighbors/</guid>
-      <description>&lt;p&gt;Let&#39;s evaluate two simple but powerful prediction methods: the linear model fit by least squares and the \(k\)-nearest-neighbor prediction rule on a simple regression problem. We will see how the linear model makes huge assumptions about structure and yields stable but possibly inaccurate predictions. The method of \(k\)-nearest neighbors, however, makes very mild structural assumptions: its predictions are often accurate but can be unstable.&lt;/p&gt;
+      <description>&lt;p&gt;In this post, we will evaluate two simple but powerful prediction methods: the linear model fit by least squares and the \(k\)-nearest-neighbor prediction rule on a simple regression problem.&lt;br&gt;
+&lt;a href=&#34;https://github.com/gmahajanml/linear-to-nearest&#34;&gt;Link to code&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;We will see how the linear model makes huge assumptions about structure and yields stable but possibly inaccurate predictions. The method of \(k\)-nearest neighbors, however, makes very mild structural assumptions: its predictions are often accurate but can be unstable.&lt;/p&gt;
 
 &lt;h2 id=&#34;training-data&#34;&gt;Training Data&lt;/h2&gt;
 
@@ -95,27 +106,25 @@ the conditional expectation, also known as the &lt;em&gt;regression&lt;/em&gt; f
 &lt;p&gt;We first create training data for \(Y=1\), denoted by \(X_{pos}\) and
 \(Y=-1\), denoted by \(X_{neg}\).&lt;/p&gt;
 
-&lt;p&gt;{% highlight matlab %}
-mu_pos = [2,3];
-mu_neg = [0,3];
-sigma = [1,1.5;1.5,3];
-X_pos = mvnrnd(mu_pos,sigma,100);
-X_neg = mvnrnd(mu_neg,sigma,100);
-{% endhighlight %}&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://gomahajan.github.io/img/linear_nearest/scenario1.png&#34; alt=&#34;&#34; title=&#34;Scenario 1&#34;&gt;&lt;figcaption&gt;Scenario 1&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://gomahajan.github.io/img/linear_nearest/scenario2.png&#34; alt=&#34;&#34; title=&#34;Scenario 2&#34;&gt;&lt;figcaption&gt;Scenario 2&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;results-for-least-squares&#34;&gt;Results for Least Squares&lt;/h2&gt;
 
 &lt;p&gt;This is how least squares performs on both scenarios.&lt;/p&gt;
 
-&lt;p&gt;{% highlight matlab %}
-X = [zeros(200,1)+1 [X_neg; X_pos]];
-Y = [zeros(100,1)-1;zeros(100,1)+1];
-param = inv(transpose(X)&lt;em&gt;X)&lt;/em&gt;transpose(X)*Y;
-{% endhighlight %}&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://gomahajan.github.io/img/linear_nearest/scenario1_linear.png&#34; alt=&#34;&#34; title=&#34;Least squares on Scenario 1&#34;&gt;&lt;figcaption&gt;Least squares on Scenario 1&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://gomahajan.github.io/img/linear_nearest/scenario2_linear.png&#34; alt=&#34;&#34; title=&#34;Least squares on Scenario 2&#34;&gt;&lt;figcaption&gt;Least squares on Scenario 2&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;results-for-nearest-neighbors&#34;&gt;Results for Nearest Neighbors&lt;/h2&gt;
 
 &lt;p&gt;This is how nearest neighbors performs for k=10.&lt;/p&gt;
+
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://gomahajan.github.io/img/linear_nearest/scenario1_nearest.png&#34; alt=&#34;&#34; title=&#34;Nearest Neighbors on Scenario 1&#34;&gt;&lt;figcaption&gt;Nearest Neighbors on Scenario 1&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://gomahajan.github.io/img/linear_nearest/scenario2_nearest.png&#34; alt=&#34;&#34; title=&#34;Nearest Neighbors on Scenario 2&#34;&gt;&lt;figcaption&gt;Nearest Neighbors on Scenario 2&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 
@@ -131,10 +140,11 @@ containing the \(k\) points in \(T\) closest to \(x\). Two approximations are ha
 &lt;li&gt;conditioning at a point is related to conditioning on some region &amp;quot;close&amp;quot; to the target point&lt;br&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;How does linear regression fit into this framework? The simplest explanation is that one assumes that the regression function \(f(x)\) is approximately linear in its arguments: &lt;span  class=&#34;math&#34;&gt;\(f(x) \approx x^T\beta\)&lt;/span&gt;
+&lt;p&gt;How does linear regression fit into this framework? The simplest explanation is that one assumes that the regression function \(f(x)\) is approximately linear in its arguments: &lt;span  class=&#34;math&#34;&gt;\(f(x) \approx x^T\beta\)&lt;/span&gt;.
 This is a model-based approach- we specify a model for the regression function. Plugging this linear model for \(f(x)\) into \(EPE\) and differentiating we can solve for \(\beta\) theoretically:
-&lt;span  class=&#34;math&#34;&gt;\(\beta = (E(XX^T))^{-1} E(XY)\)&lt;/span&gt;
-Note we have not conditioned on \(X\); rather we have used our knowledge of the functional relationship to &lt;em&gt;pool&lt;/em&gt; over values of \(X\). The least squares solution amounts to replacing the expectation b averages overs the training data.&lt;/p&gt;
+&lt;span  class=&#34;math&#34;&gt;\(\beta = (E(XX^T))^{-1} E(XY)\)&lt;/span&gt;.&lt;/p&gt;
+
+&lt;p&gt;Note we have not conditioned on \(X\); rather we have used our knowledge of the functional relationship to &lt;em&gt;pool&lt;/em&gt; over values of \(X\). The least squares solution amounts to replacing the expectation b averages overs the training data.&lt;/p&gt;
 
 &lt;p&gt;So both \(k\)-nearest neighbors and least squares end up approximating
 conditional expectations by averages. But they differ dramatically in terms
@@ -147,8 +157,7 @@ stable to fit. More suitable for scenario 1.&lt;/li&gt;
 &lt;li&gt;k-nearest neighbors assumes f(x) is well approximated by a locally constant function. Thus, it is wiggly and unstable. It however
 does not rely on any stringent assumptions about the underlying data, and can adapt
 to any situation. More suitable for scenario 2.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -204,60 +213,6 @@ explanatory variable \(x\) is known as regression/regression problem.&lt;/p&gt;
 &lt;p&gt;An example of a regression problem would be the prediction
 of the yield in a chemical manufacturing process in which the inputs consist
 of the concentrations of reactants, the temperature, and the pressure.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Gaussian Distribution and Mahalanobis Distance</title>
-      <link>https://gomahajan.github.io/post/gaussian-mahalanobis/</link>
-      <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://gomahajan.github.io/post/gaussian-mahalanobis/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://journals1.scholarsportal.info/details/01697439/v50i0001/1_tmd.xml&#34;&gt;http://journals1.scholarsportal.info/details/01697439/v50i0001/1_tmd.xml&lt;/a&gt;
-&lt;a href=&#34;http://cs229.stanford.edu/section/gaussians.pdf&#34;&gt;http://cs229.stanford.edu/section/gaussians.pdf&lt;/a&gt;
-&lt;a href=&#34;http://math.stackexchange.com/questions/428064/distance-of-a-test-point-from-the-center-of-an-ellipsoid&#34;&gt;http://math.stackexchange.com/questions/428064/distance-of-a-test-point-from-the-center-of-an-ellipsoid&lt;/a&gt;
-&lt;a href=&#34;http://stats.stackexchange.com/questions/62092/bottom-to-top-explanation-of-the-mahalanobis-distance&#34;&gt;http://stats.stackexchange.com/questions/62092/bottom-to-top-explanation-of-the-mahalanobis-distance&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How to write Literature Review?</title>
-      <link>https://gomahajan.github.io/post/how-to-write-literature-review/</link>
-      <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://gomahajan.github.io/post/how-to-write-literature-review/</guid>
-      <description>&lt;p&gt;&#39;Why&#39; and &#39;How&#39; are related. &#39;Why&#39; is the motivation for us trying to learn &#39;How&#39; and will also help us appreciate more the &#39;How&#39;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://getalifephd.blogspot.in/2011/10/writing-literature-review-six-steps-to.html&#34;&gt;http://getalifephd.blogspot.in/2011/10/writing-literature-review-six-steps-to.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.uq.edu.au/student-services/phdwriting/phfaq23.html&#34;&gt;https://www.uq.edu.au/student-services/phdwriting/phfaq23.html&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://library.bcu.ac.uk/learner/writingguides/1.04.htm&#34;&gt;http://library.bcu.ac.uk/learner/writingguides/1.04.htm&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://owlcation.com/misc/literature_review&#34;&gt;https://owlcation.com/misc/literature_review&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Some really good blogs for PhD students</title>
-      <link>https://gomahajan.github.io/post/some-really-good-blogs/</link>
-      <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://gomahajan.github.io/post/some-really-good-blogs/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://getalifephd.blogspot.in/&#34;&gt;http://getalifephd.blogspot.in/&lt;/a&gt;
-&lt;a href=&#34;https://people.cs.umass.edu/~wallach/how_to_be_a_successful_phd_student.pdf&#34;&gt;https://people.cs.umass.edu/~wallach/how_to_be_a_successful_phd_student.pdf&lt;/a&gt;
-&lt;a href=&#34;https://www.cs.unc.edu/~azuma/hitch4.html&#34;&gt;https://www.cs.unc.edu/~azuma/hitch4.html&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>What is Bayesian Perspective?</title>
-      <link>https://gomahajan.github.io/post/what-is-bayesian-perspective/</link>
-      <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://gomahajan.github.io/post/what-is-bayesian-perspective/</guid>
-      <description>&lt;p&gt;prior probability
-posterior probability&lt;/p&gt;
 </description>
     </item>
     

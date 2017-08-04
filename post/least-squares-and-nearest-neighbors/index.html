@@ -25,6 +25,8 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
   <link rel="stylesheet" href="/css/hugo-academic.css">
   
+  <link rel="stylesheet" href="/css/custom.css">
+  
 
   
 
@@ -188,7 +190,12 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      <p>Let's evaluate two simple but powerful prediction methods: the linear model fit by least squares and the \(k\)-nearest-neighbor prediction rule on a simple regression problem. We will see how the linear model makes huge assumptions about structure and yields stable but possibly inaccurate predictions. The method of \(k\)-nearest neighbors, however, makes very mild structural assumptions: its predictions are often accurate but can be unstable.</p>
+      <p>In this post, we will evaluate two simple but powerful prediction methods: the linear model fit by least squares and the \(k\)-nearest-neighbor prediction rule on a simple regression problem.<br>
+<a href="https://github.com/gmahajanml/linear-to-nearest">Link to code</a></p>
+
+<p></p>
+
+<p>We will see how the linear model makes huge assumptions about structure and yields stable but possibly inaccurate predictions. The method of \(k\)-nearest neighbors, however, makes very mild structural assumptions: its predictions are often accurate but can be unstable.</p>
 
 <h2 id="training-data">Training Data</h2>
 
@@ -201,27 +208,25 @@
 <p>We first create training data for \(Y=1\), denoted by \(X_{pos}\) and
 \(Y=-1\), denoted by \(X_{neg}\).</p>
 
-<p>{% highlight matlab %}
-mu_pos = [2,3];
-mu_neg = [0,3];
-sigma = [1,1.5;1.5,3];
-X_pos = mvnrnd(mu_pos,sigma,100);
-X_neg = mvnrnd(mu_neg,sigma,100);
-{% endhighlight %}</p>
+<p><figure><img src="/img/linear_nearest/scenario1.png" alt="" title="Scenario 1"><figcaption>Scenario 1</figcaption></figure></p>
+
+<p><figure><img src="/img/linear_nearest/scenario2.png" alt="" title="Scenario 2"><figcaption>Scenario 2</figcaption></figure></p>
 
 <h2 id="results-for-least-squares">Results for Least Squares</h2>
 
 <p>This is how least squares performs on both scenarios.</p>
 
-<p>{% highlight matlab %}
-X = [zeros(200,1)+1 [X_neg; X_pos]];
-Y = [zeros(100,1)-1;zeros(100,1)+1];
-param = inv(transpose(X)<em>X)</em>transpose(X)*Y;
-{% endhighlight %}</p>
+<p><figure><img src="/img/linear_nearest/scenario1_linear.png" alt="" title="Least squares on Scenario 1"><figcaption>Least squares on Scenario 1</figcaption></figure></p>
+
+<p><figure><img src="/img/linear_nearest/scenario2_linear.png" alt="" title="Least squares on Scenario 2"><figcaption>Least squares on Scenario 2</figcaption></figure></p>
 
 <h2 id="results-for-nearest-neighbors">Results for Nearest Neighbors</h2>
 
 <p>This is how nearest neighbors performs for k=10.</p>
+
+<p><figure><img src="/img/linear_nearest/scenario1_nearest.png" alt="" title="Nearest Neighbors on Scenario 1"><figcaption>Nearest Neighbors on Scenario 1</figcaption></figure></p>
+
+<p><figure><img src="/img/linear_nearest/scenario2_nearest.png" alt="" title="Nearest Neighbors on Scenario 2"><figcaption>Nearest Neighbors on Scenario 2</figcaption></figure></p>
 
 <h2 id="conclusion">Conclusion</h2>
 
@@ -237,10 +242,11 @@ containing the \(k\) points in \(T\) closest to \(x\). Two approximations are ha
 <li>conditioning at a point is related to conditioning on some region &quot;close&quot; to the target point<br></li>
 </ul>
 
-<p>How does linear regression fit into this framework? The simplest explanation is that one assumes that the regression function \(f(x)\) is approximately linear in its arguments: <span  class="math">\(f(x) \approx x^T\beta\)</span>
+<p>How does linear regression fit into this framework? The simplest explanation is that one assumes that the regression function \(f(x)\) is approximately linear in its arguments: <span  class="math">\(f(x) \approx x^T\beta\)</span>.
 This is a model-based approach- we specify a model for the regression function. Plugging this linear model for \(f(x)\) into \(EPE\) and differentiating we can solve for \(\beta\) theoretically:
-<span  class="math">\(\beta = (E(XX^T))^{-1} E(XY)\)</span>
-Note we have not conditioned on \(X\); rather we have used our knowledge of the functional relationship to <em>pool</em> over values of \(X\). The least squares solution amounts to replacing the expectation b averages overs the training data.</p>
+<span  class="math">\(\beta = (E(XX^T))^{-1} E(XY)\)</span>.</p>
+
+<p>Note we have not conditioned on \(X\); rather we have used our knowledge of the functional relationship to <em>pool</em> over values of \(X\). The least squares solution amounts to replacing the expectation b averages overs the training data.</p>
 
 <p>So both \(k\)-nearest neighbors and least squares end up approximating
 conditional expectations by averages. But they differ dramatically in terms
@@ -254,7 +260,6 @@ stable to fit. More suitable for scenario 1.</li>
 does not rely on any stringent assumptions about the underlying data, and can adapt
 to any situation. More suitable for scenario 2.</li>
 </ul>
-
     </div>
   </div>
 
