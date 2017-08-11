@@ -82,6 +82,18 @@
         
 
         <li class="nav-item">
+          <a href="/#news" data-target="#news">
+            
+            <span>News</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
           <a href="/#posts" data-target="#posts">
             
             <span>Posts</span>
@@ -170,6 +182,13 @@
           </a>
         </li>
         
+        
+        <li>
+          <a itemprop="sameAs" href="/pdf/resume.pdf" target="_blank">
+            <i class="fa fa-file-pdf-o big-icon"></i>
+          </a>
+        </li>
+        
       </ul>
 
     </div>
@@ -224,6 +243,31 @@
 
   
   
+  <section id="news" class="home-section">
+    <div class="container">
+      
+
+
+<div class="row">
+  <div class="col-xs-12 col-md-4 section-heading">
+    <h1>News</h1>
+    
+  </div>
+  <div class="col-xs-12 col-md-8">
+    <ul>
+<li>[September, 2014] Joined Project Siena (now PowerApps) at <a href="https://powerapps.microsoft.com/">Microsoft</a>.</li>
+<li>[September, 2016] Shipped PowerApps GA at <a href="https://powerapps.microsoft.com/">Microsoft</a>.</li>
+<li>[September, 2017] Joined PhD program at <a href="http://cseweb.ucsd.edu/">University of California</a>.</li>
+</ul>
+
+  </div>
+</div>
+
+    </div>
+  </section>
+
+  
+  
   <section id="posts" class="home-section">
     <div class="container">
       
@@ -236,13 +280,6 @@
 
     <h1>Recent Posts</h1>
     
-    
-    <p class="view-all">
-      <a href="/post/">
-        More Posts
-        <i class="fa fa-angle-double-right"></i>
-      </a>
-    </p>
     
 
   </div>
@@ -421,110 +458,6 @@
 </div>
 
       
-        
-        
-
-
-<div class="article-list-item" itemscope itemprop="blogPost">
-  
-  
-  <h3 class="article-title" itemprop="name">
-    <a href="https://gomahajan.github.io/post/what-is-least-squares/" itemprop="url">What is Linear Models and Least Squares?</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2017-08-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-      Tue, Aug 1, 2017
-    </time>
-  </span>
-
-  
-
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/whatis">whatis</a
-    >
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    <p>For the regression problem, the linear model, as its name implies, assumes a linear relationship.</p>
-    
-  </div>
-  <p class="read-more">
-    <a href="https://gomahajan.github.io/post/what-is-least-squares/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-      
-        
-        
-
-
-<div class="article-list-item" itemscope itemprop="blogPost">
-  
-  
-  <h3 class="article-title" itemprop="name">
-    <a href="https://gomahajan.github.io/post/what-is-nearest-neighbors/" itemprop="url">What is Nearest Neighbor Methods?</a>
-  </h3>
-  
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2017-08-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-      Tue, Aug 1, 2017
-    </time>
-  </span>
-
-  
-
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/whatis">whatis</a
-    >
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-  <div class="article-style" itemprop="articleBody">
-    
-    <p>For the regression problem, nearest-neighbor methods use those observations in the training set (T) closest in input space to (x) for prediction.</p>
-    
-  </div>
-  <p class="read-more">
-    <a href="https://gomahajan.github.io/post/what-is-nearest-neighbors/" class="btn btn-primary btn-outline">
-      CONTINUE READING
-    </a>
-  </p>
-</div>
-
-      
     
 
   </div>
@@ -619,7 +552,8 @@
         MathJax.Hub.Config({ 
         tex2jax: { 
               inlineMath: [['$','$'], ['\\(','\\)']],
-              displayMath: [['$$','$$'], ['\[','\]']],
+              displayMath: [['$$','$$']],
+              processEscapes: true,
               processEnvironments: true
             },
         TeX: {
