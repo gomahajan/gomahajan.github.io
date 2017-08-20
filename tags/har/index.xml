@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ai on Gaurav Mahajan</title>
-    <link>https://gomahajan.github.io/tags/ai/</link>
-    <description>Recent content in Ai on Gaurav Mahajan</description>
+    <title>Har on Gaurav Mahajan</title>
+    <link>https://gomahajan.github.io/tags/har/</link>
+    <description>Recent content in Har on Gaurav Mahajan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Gaurav Mahajan</copyright>
     <lastBuildDate>Sun, 20 Aug 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/ai/" rel="self" type="application/rss+xml" />
+    <atom:link href="/tags/har/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Human Activity Recognition using Convolution Neural Network</title>
@@ -48,47 +48,6 @@
 &lt;p&gt;If you haven&#39;t heard of Depthwise Convolution Neural Networks, they are similar to normal Convolution Neural Networks except the filters are applied to each channel separately. So, a Convolution Neural Network which has input tensor of shape [batch, in_height, in_width, in_channels] and a filter tensor of shape [filter_height, filter_width, in_channels, out_channels] will output a tensor of shape [batch, out_height, out_width, out_channels]. A Depthwise Convolution Neural Network which has input tensor of shape [batch, in_height, in_width, in_channels] and a filter tensor of shape [filter_height, filter_width, in_channels, channel_multiplier] will output a tensor of shape [batch, out_height, out_width, in_channels*channel_multiplier] as it will separately apply channel_multiplier number of filters to each in_channel.&lt;/p&gt;
 
 &lt;p&gt;Inspired from a &lt;a href=&#34;https://github.com/aqibsaeed/Human-Activity-Recognition-using-CNN&#34;&gt;post&lt;/a&gt; by Aaqib Saeed&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Finding Regression Function</title>
-      <link>https://gomahajan.github.io/post/finding-regression-function/</link>
-      <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://gomahajan.github.io/post/finding-regression-function/</guid>
-      <description>&lt;p&gt;In this post, we will discuss how the regression function for squared error loss function is &lt;span  class=&#34;math&#34;&gt;\(f(x)=E(Y|X=x)\)&lt;/span&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Let
-\(X\in R^P\) denote a real valued random input vector, and \(Y\in R\) a real valued random output variable, with joint distribution \(Pr(X,Y)\).
-We seek a function \(f(X)\) for predicting \(Y\) given values of the input \(X\). This theory requires a &lt;em&gt;loss function&lt;/em&gt; \(L(Y,f(X))\) for penalizing errors in prediction, and we will use &lt;em&gt;squared error loss&lt;/em&gt;: \(L(Y,f(X))=(Y-f(X))^2\).&lt;/p&gt;
-
-&lt;p&gt;This leads us to a criterion for choosing \(f\),&lt;/p&gt;
-
-&lt;p&gt;\begin{align*}
-EPE(f)&amp;amp; = E(Y-f(X))^2\\&lt;br&gt;
-&amp;amp; = \int(y-f(x))^2 Pr(dx,dy)
-\end{align*}&lt;/p&gt;
-
-&lt;p&gt;the expected (squared) prediction error. By conditioning on \(X\), we can write \(EPE\) as &lt;span  class=&#34;math&#34;&gt;\(EPE(f) = E_X E_{Y|X} ((Y-f(X))^2|X)\)&lt;/span&gt;
-and we see that it suffices to minimize \(EPE\) pointwise:
-\begin{equation}
-\label{epe}
-f(x)=\underset{c}{\operatorname{argmin}} E_{Y|X} ([Y-c]^2|X=x)
-\end{equation}&lt;/p&gt;
-
-&lt;p&gt;For any guess t by writing \(\mu = E(Y)\), we have \(EPE(f)\) as
-\begin{align*}
-E[Y-t]^2 &amp;amp; = E[Y-\mu + \mu-t]^2\\&lt;br&gt;
-&amp;amp; = E[Y-\mu]^2 + E[(Y-\mu)(\mu-t)] + E[\mu-t]^2\\&lt;br&gt;
-&amp;amp; \geq E[Y-\mu]^2
-\end{align*}&lt;/p&gt;
-
-&lt;p&gt;Applied to conditional distribution of \(Y\) given \(X=x\), this gives us that &lt;span  class=&#34;math&#34;&gt;\(E_{Y|X}([Y-E(Y|X=x)]^2|X=x) \leq E_{Y|X} ([Y-c]^2|X=x)\)&lt;/span&gt; for all estimates \(c\).&lt;/p&gt;
-
-&lt;p&gt;Hence, proved that the solution for equation \eqref{epe} above is &lt;span  class=&#34;math&#34;&gt;\(f(x)=E(Y|X=x)\)&lt;/span&gt;
-the conditional expectation, also known as the &lt;em&gt;regression&lt;/em&gt; function.&lt;/p&gt;</description>
     </item>
     
   </channel>

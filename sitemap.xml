@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>https://gomahajan.github.io/post/har-cnn-actitracker/</loc>
+      <lastmod>2017-08-20T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://gomahajan.github.io/post/finding-regression-function/</loc>
       <lastmod>2017-08-01T00:00:00+00:00</lastmod>
     </url>
@@ -60,7 +69,7 @@
     <url>
     
       <loc>https://gomahajan.github.io/tags/ai/</loc>
-      <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+      <lastmod>2017-08-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -80,6 +89,16 @@
     
       <loc>https://gomahajan.github.io/</loc>
       <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://gomahajan.github.io/tags/har/</loc>
+      <lastmod>2017-08-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -118,7 +137,7 @@
     <url>
     
       <loc>https://gomahajan.github.io/tags/</loc>
-      <lastmod>2017-08-01T00:00:00+00:00</lastmod>
+      <lastmod>2017-08-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

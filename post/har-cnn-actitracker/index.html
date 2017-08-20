@@ -30,17 +30,17 @@
 
   
 
-  <link rel="alternate" href="https://gomahajan.github.io/post/index.xml" type="application/rss+xml" title="Gaurav Mahajan">
-  <link rel="feed" href="https://gomahajan.github.io/post/index.xml" type="application/rss+xml" title="Gaurav Mahajan">
+  <link rel="alternate" href="https://gomahajan.github.io/index.xml" type="application/rss+xml" title="Gaurav Mahajan">
+  <link rel="feed" href="https://gomahajan.github.io/index.xml" type="application/rss+xml" title="Gaurav Mahajan">
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://gomahajan.github.io/post/">
+  <link rel="canonical" href="https://gomahajan.github.io/post/har-cnn-actitracker/">
 
   
 
-  <title>Posts | Gaurav Mahajan</title>
+  <title>Human Activity Recognition using Convolution Neural Network | Gaurav Mahajan</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -123,20 +123,13 @@
 </nav>
 
 
-
-
-
-<div class="universal-wrapper">
-
-  <h1>Posts</h1>
+<article class="article" itemscope itemtype="http://schema.org/Article">
 
   
 
-  
-  
-  <div>
-    
-    <h2><a href="https://gomahajan.github.io/post/har-cnn-actitracker/">Human Activity Recognition using Convolution Neural Network</a></h2>
+
+  <div class="article-container">
+    <h1 itemprop="name">Human Activity Recognition using Convolution Neural Network</h1>
     
 
 <div class="article-metadata">
@@ -166,153 +159,133 @@
   
 
   
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fgomahajan.github.io%2fpost%2fhar-cnn-actitracker%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=Human%20Activity%20Recognition%20using%20Convolution%20Neural%20Network&amp;url=https%3a%2f%2fgomahajan.github.io%2fpost%2fhar-cnn-actitracker%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fgomahajan.github.io%2fpost%2fhar-cnn-actitracker%2f&amp;title=Human%20Activity%20Recognition%20using%20Convolution%20Neural%20Network"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fgomahajan.github.io%2fpost%2fhar-cnn-actitracker%2f&amp;title=Human%20Activity%20Recognition%20using%20Convolution%20Neural%20Network"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=Human%20Activity%20Recognition%20using%20Convolution%20Neural%20Network&amp;body=https%3a%2f%2fgomahajan.github.io%2fpost%2fhar-cnn-actitracker%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
 
 </div>
 
-    <div class="article-style"><p>
-      
-      In this post, we will discuss how to build a architecture for Human Activity Recognition using Convolution Neural Network. <a href="https://github.com/gomahajan/har-actitracker">Link to code</a></p>
+    <div class="article-style" itemprop="articleBody">
+      <p>In this post, we will discuss how to build a architecture for Human Activity Recognition using Convolution Neural Network. <a href="https://github.com/gomahajan/har-actitracker">Link to code</a></p>
 
-<p>
-      
-    </p></div>
+<p></p>
+
+<h1 id="python-libraries-used">Python Libraries Used</h1>
+
+<ol>
+<li>TensorFlow</li>
+<li>Pandas</li>
+<li>Numpy</li>
+<li>Scipy</li>
+<li>Matplotlib</li>
+</ol>
+
+<h1 id="dataset">Dataset</h1>
+
+<p>We are going to build a architecture which recognizes human activities like walking, lying down, standing, sitting, jogging etc. based on accelerometer data. We will use the Actitracker dataset from <a href="http://www.cis.fordham.edu/wisdm/dataset.php">Wireless Sensor Data Mining Lab</a>.</p>
+
+<p>Data for some activities in the dataset:</p>
+
+<p><figure><img src="/img/har-cnn-actitracker/walking.png" alt=""></figure>
+<figure><img src="/img/har-cnn-actitracker/lying-down.png" alt=""></figure></p>
+
+<h1 id="architecture">Architecture</h1>
+
+<p>Our architecture consists of multiple Depthwise Convolution Neural Networks (D-CONV), Max POOL and RELU layers, followed by fully connected neural network (FC) with a softmax classifier to get the class probabilities.</p>
+
+<p>[D-CONV -&gt; RELU] -&gt; POOL -&gt; [D-CONV -&gt; RELU] -&gt; FC</p>
+
+<p>If you haven't heard of Depthwise Convolution Neural Networks, they are similar to normal Convolution Neural Networks except the filters are applied to each channel separately. So, a Convolution Neural Network which has input tensor of shape [batch, in_height, in_width, in_channels] and a filter tensor of shape [filter_height, filter_width, in_channels, out_channels] will output a tensor of shape [batch, out_height, out_width, out_channels]. A Depthwise Convolution Neural Network which has input tensor of shape [batch, in_height, in_width, in_channels] and a filter tensor of shape [filter_height, filter_width, in_channels, channel_multiplier] will output a tensor of shape [batch, out_height, out_width, in_channels*channel_multiplier] as it will separately apply channel_multiplier number of filters to each in_channel.</p>
+
+<p>Inspired from a <a href="https://github.com/aqibsaeed/Human-Activity-Recognition-using-CNN">post</a> by Aaqib Saeed</p>
+    </div>
   </div>
-  
-  <div>
+
+</article>
+
+<div class="container">
+  <nav>
+  <ul class="pager">
     
-    <h2><a href="https://gomahajan.github.io/post/finding-regression-function/">Finding Regression Function</a></h2>
+    <li class="previous"><a href="https://gomahajan.github.io/post/finding-regression-function/"><span
+      aria-hidden="true">&larr;</span> Finding Regression Function</a></li>
     
 
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2017-08-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-      Tue, Aug 1, 2017
-    </time>
-  </span>
-
-  
-
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
     
-    <a href="/tags/regression">regression</a
-    >, 
-    
-    <a href="/tags/ai">ai</a
-    >, 
-    
-    <a href="/tags/proof">proof</a
-    >
-    
-  </span>
-  
-  
-
-  
+  </ul>
+</nav>
 
 </div>
 
-    <div class="article-style"><p>
-      
-      In this post, we will discuss how the regression function for squared error loss function is <span  class="math">\(f(x)=E(Y|X=x)\)</span>.</p>
-
-<p>
-      
-    </p></div>
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread">
+    <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "gmahajanml" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
   </div>
-  
-  <div>
-    
-    <h2><a href="https://gomahajan.github.io/post/first-few-weeks-in-phd/">First Few Weeks in PhD</a></h2>
-    
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2017-08-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-      Tue, Aug 1, 2017
-    </time>
-  </span>
-
-  
-
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/tips">tips</a
-    >
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-    <div class="article-style"><p>
-      
-      This post discusses the few tips recommended by people for first few weeks in PhD.</p>
-
-<p>
-      
-    </p></div>
-  </div>
-  
-  <div>
-    
-    <h2><a href="https://gomahajan.github.io/post/least-squares-and-nearest-neighbors/">From Least Squares to Nearest Neighbors</a></h2>
-    
-
-<div class="article-metadata">
-
-  <span class="article-date">
-    <time datetime="2017-08-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-      Tue, Aug 1, 2017
-    </time>
-  </span>
-
-  
-
-  
-  
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/regression">regression</a
-    >
-    
-  </span>
-  
-  
-
-  
-
-</div>
-
-    <div class="article-style"><p>
-      
-      In this post, we will evaluate two simple but powerful prediction methods: the linear model fit by least squares and the \(k\)-nearest-neighbor prediction rule on a simple regression problem.<br>
-<a href="https://github.com/gmahajanml/linear-to-nearest">Link to code</a></p>
-
-<p>
-      
-    </p></div>
-  </div>
-  
-
-  
+</section>
 
 
 </div>
+
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">

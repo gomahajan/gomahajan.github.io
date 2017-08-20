@@ -11,6 +11,46 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Human Activity Recognition using Convolution Neural Network</title>
+      <link>https://gomahajan.github.io/post/har-cnn-actitracker/</link>
+      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomahajan.github.io/post/har-cnn-actitracker/</guid>
+      <description>&lt;p&gt;In this post, we will discuss how to build a architecture for Human Activity Recognition using Convolution Neural Network. &lt;a href=&#34;https://github.com/gomahajan/har-actitracker&#34;&gt;Link to code&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;python-libraries-used&#34;&gt;Python Libraries Used&lt;/h1&gt;
+
+&lt;ol&gt;
+&lt;li&gt;TensorFlow&lt;/li&gt;
+&lt;li&gt;Pandas&lt;/li&gt;
+&lt;li&gt;Numpy&lt;/li&gt;
+&lt;li&gt;Scipy&lt;/li&gt;
+&lt;li&gt;Matplotlib&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&#34;dataset&#34;&gt;Dataset&lt;/h1&gt;
+
+&lt;p&gt;We are going to build a architecture which recognizes human activities like walking, lying down, standing, sitting, jogging etc. based on accelerometer data. We will use the Actitracker dataset from &lt;a href=&#34;http://www.cis.fordham.edu/wisdm/dataset.php&#34;&gt;Wireless Sensor Data Mining Lab&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Data for some activities in the dataset:&lt;/p&gt;
+
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://gomahajan.github.io/img/har-cnn-actitracker/walking.png&#34; alt=&#34;&#34;&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;img src=&#34;https://gomahajan.github.io/img/har-cnn-actitracker/lying-down.png&#34; alt=&#34;&#34;&gt;&lt;/figure&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;architecture&#34;&gt;Architecture&lt;/h1&gt;
+
+&lt;p&gt;Our architecture consists of multiple Depthwise Convolution Neural Networks (D-CONV), Max POOL and RELU layers, followed by fully connected neural network (FC) with a softmax classifier to get the class probabilities.&lt;/p&gt;
+
+&lt;p&gt;[D-CONV -&amp;gt; RELU] -&amp;gt; POOL -&amp;gt; [D-CONV -&amp;gt; RELU] -&amp;gt; FC&lt;/p&gt;
+
+&lt;p&gt;If you haven&#39;t heard of Depthwise Convolution Neural Networks, they are similar to normal Convolution Neural Networks except the filters are applied to each channel separately. So, a Convolution Neural Network which has input tensor of shape [batch, in_height, in_width, in_channels] and a filter tensor of shape [filter_height, filter_width, in_channels, out_channels] will output a tensor of shape [batch, out_height, out_width, out_channels]. A Depthwise Convolution Neural Network which has input tensor of shape [batch, in_height, in_width, in_channels] and a filter tensor of shape [filter_height, filter_width, in_channels, channel_multiplier] will output a tensor of shape [batch, out_height, out_width, in_channels*channel_multiplier] as it will separately apply channel_multiplier number of filters to each in_channel.&lt;/p&gt;
+
+&lt;p&gt;Inspired from a &lt;a href=&#34;https://github.com/aqibsaeed/Human-Activity-Recognition-using-CNN&#34;&gt;post&lt;/a&gt; by Aaqib Saeed&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Finding Regression Function</title>
       <link>https://gomahajan.github.io/post/finding-regression-function/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
