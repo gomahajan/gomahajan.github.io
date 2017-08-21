@@ -30,17 +30,17 @@
 
   
 
-  <link rel="alternate" href="https://gomahajan.github.io/index.xml" type="application/rss+xml" title="Gaurav Mahajan">
-  <link rel="feed" href="https://gomahajan.github.io/index.xml" type="application/rss+xml" title="Gaurav Mahajan">
+  <link rel="alternate" href="https://gomahajan.github.io/tags/human-activity-recognition/index.xml" type="application/rss+xml" title="Gaurav Mahajan">
+  <link rel="feed" href="https://gomahajan.github.io/tags/human-activity-recognition/index.xml" type="application/rss+xml" title="Gaurav Mahajan">
 
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://gomahajan.github.io/post/finding-regression-function/">
+  <link rel="canonical" href="https://gomahajan.github.io/tags/human-activity-recognition/">
 
   
 
-  <title>Finding Regression Function | Gaurav Mahajan</title>
+  <title>Human Activity Recognition | Gaurav Mahajan</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -123,134 +123,33 @@
 </nav>
 
 
-<article class="article" itemscope itemtype="http://schema.org/Article">
-
-  
 
 
-  <div class="article-container">
-    <h1 itemprop="name">Finding Regression Function</h1>
-    
 
-<div class="article-metadata">
+<div class="universal-wrapper">
 
-  <span class="article-date">
-    <time datetime="2017-08-01 00:00:00 &#43;0000 UTC" itemprop="datePublished">
-      Tue, Aug 1, 2017
-    </time>
-  </span>
+  <h1>Human Activity Recognition</h1>
 
   
 
   
   
-  
-  <span class="article-tags">
-    <i class="fa fa-tags"></i>
-    
-    <a href="/tags/regression">regression</a
-    >, 
-    
-    <a href="/tags/proof">proof</a
-    >
-    
-  </span>
-  
-  
+  <div>
+    <h2><a href="https://gomahajan.github.io/post/cnn-har-actitracker/">Human Activity Recognition using Convolution Neural Network</a></h2>
+    <div class="article-style">
+      
+      In this post<sup class="footnote-ref" id="fnref:1"><a class="footnote" href="#fn:1">1</a></sup>, we will discuss how to build a architecture for Human Activity Recognition using Convolution Neural Network. <a href="https://github.com/gomahajan/har-actitracker">Link to code</a></p>
 
-  
-  
-
-  
-
-</div>
-
-    <div class="article-style" itemprop="articleBody">
-      <p>In this post, we will discuss how the regression function for squared error loss function is <span  class="math">\(f(x)=E(Y|X=x)\)</span>.</p>
-
-<p></p>
-
-<p>Let
-\(X\in R^P\) denote a real valued random input vector, and \(Y\in R\) a real valued random output variable, with joint distribution \(Pr(X,Y)\).
-We seek a function \(f(X)\) for predicting \(Y\) given values of the input \(X\). This theory requires a <em>loss function</em> \(L(Y,f(X))\) for penalizing errors in prediction, and we will use <em>squared error loss</em>: \(L(Y,f(X))=(Y-f(X))^2\).</p>
-
-<p>This leads us to a criterion for choosing \(f\),</p>
-
-<p>\begin{align*}
-EPE(f)&amp; = E(Y-f(X))^2\\<br>
-&amp; = \int(y-f(x))^2 Pr(dx,dy)
-\end{align*}</p>
-
-<p>the expected (squared) prediction error. By conditioning on \(X\), we can write \(EPE\) as <span  class="math">\(EPE(f) = E_X E_{Y|X} ((Y-f(X))^2|X)\)</span>
-and we see that it suffices to minimize \(EPE\) pointwise:
-\begin{equation}
-\label{epe}
-f(x)=\underset{c}{\operatorname{argmin}} E_{Y|X} ([Y-c]^2|X=x)
-\end{equation}</p>
-
-<p>For any guess t by writing \(\mu = E(Y)\), we have \(EPE(f)\) as
-\begin{align*}
-E[Y-t]^2 &amp; = E[Y-\mu + \mu-t]^2\\<br>
-&amp; = E[Y-\mu]^2 + E[(Y-\mu)(\mu-t)] + E[\mu-t]^2\\<br>
-&amp; \geq E[Y-\mu]^2
-\end{align*}</p>
-
-<p>Applied to conditional distribution of \(Y\) given \(X=x\), this gives us that <span  class="math">\(E_{Y|X}([Y-E(Y|X=x)]^2|X=x) \leq E_{Y|X} ([Y-c]^2|X=x)\)</span> for all estimates \(c\).</p>
-
-<p>Hence, proved that the solution for equation \eqref{epe} above is <span  class="math">\(f(x)=E(Y|X=x)\)</span>
-the conditional expectation, also known as the <em>regression</em> function.</p>
+<p>
+      
     </div>
   </div>
-
-</article>
-
-<div class="container">
-  <nav>
-  <ul class="pager">
-    
-    <li class="previous"><a href="https://gomahajan.github.io/post/first-few-weeks-in-phd/"><span
-      aria-hidden="true">&larr;</span> First Few Weeks in PhD</a></li>
-    
-
-    
-    <li class="next"><a href="https://gomahajan.github.io/post/cnn-har-actitracker/">Human Activity Recognition using Convolution Neural Network <span
-      aria-hidden="true">&rarr;</span></a></li>
-    
-  </ul>
-</nav>
-
-</div>
-
-<div class="article-container">
   
-<section id="comments">
-  <div id="disqus_thread">
-    <div id="disqus_thread"></div>
-<script>
-    var disqus_config = function () {
-    
-    
-    
-    };
-    (function() {
-        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
-            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
-            return;
-        }
-        var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "gmahajanml" + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-  </div>
-</section>
+
+  
 
 
 </div>
-
 <footer class="site-footer">
   <div class="container">
     <p class="powered-by">

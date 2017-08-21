@@ -11,20 +11,20 @@
     <atom:link href="/tags/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Ai</title>
-      <link>https://gomahajan.github.io/tags/ai/</link>
+      <title>Convolution Neural Network</title>
+      <link>https://gomahajan.github.io/tags/convolution-neural-network/</link>
       <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://gomahajan.github.io/tags/ai/</guid>
+      <guid>https://gomahajan.github.io/tags/convolution-neural-network/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Har</title>
-      <link>https://gomahajan.github.io/tags/har/</link>
+      <title>Human Activity Recognition</title>
+      <link>https://gomahajan.github.io/tags/human-activity-recognition/</link>
       <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://gomahajan.github.io/tags/har/</guid>
+      <guid>https://gomahajan.github.io/tags/human-activity-recognition/</guid>
       <description></description>
     </item>
     
@@ -43,6 +43,15 @@
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
       <guid>https://gomahajan.github.io/tags/regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tensorflow</title>
+      <link>https://gomahajan.github.io/tags/tensorflow/</link>
+      <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://gomahajan.github.io/tags/tensorflow/</guid>
       <description></description>
     </item>
     

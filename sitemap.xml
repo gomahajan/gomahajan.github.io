@@ -5,7 +5,7 @@
     
     <url>
     
-      <loc>https://gomahajan.github.io/post/har-cnn-actitracker/</loc>
+      <loc>https://gomahajan.github.io/post/cnn-har-actitracker/</loc>
       <lastmod>2017-08-20T00:00:00+00:00</lastmod>
     </url>
     
@@ -68,8 +68,7 @@
     
     <url>
     
-      <loc>https://gomahajan.github.io/tags/ai/</loc>
-      <lastmod>2017-08-20T00:00:00+00:00</lastmod>
+      <loc>https://gomahajan.github.io/categories/</loc>
       <priority>0</priority>
     </url>
     
@@ -78,7 +77,8 @@
     
     <url>
     
-      <loc>https://gomahajan.github.io/categories/</loc>
+      <loc>https://gomahajan.github.io/tags/convolution-neural-network/</loc>
+      <lastmod>2017-08-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -97,7 +97,7 @@
     
     <url>
     
-      <loc>https://gomahajan.github.io/tags/har/</loc>
+      <loc>https://gomahajan.github.io/tags/human-activity-recognition/</loc>
       <lastmod>2017-08-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -137,6 +137,16 @@
     <url>
     
       <loc>https://gomahajan.github.io/tags/</loc>
+      <lastmod>2017-08-20T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://gomahajan.github.io/tags/tensorflow/</loc>
       <lastmod>2017-08-20T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
