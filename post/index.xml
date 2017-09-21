@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Gaurav Mahajan</title>
-    <link>https://gomahajan.github.io/post/</link>
+    <link>http://cseweb.ucsd.edu/~gmahajan/post/</link>
     <description>Recent content in Posts on Gaurav Mahajan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Gaurav Mahajan</copyright>
     <lastBuildDate>Tue, 01 Aug 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    <atom:link href="/~gmahajan/post/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Human Activity Recognition using Convolution Neural Network</title>
-      <link>https://gomahajan.github.io/post/cnn-har-actitracker/</link>
+      <link>http://cseweb.ucsd.edu/~gmahajan/post/cnn-har-actitracker/</link>
       <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://gomahajan.github.io/post/cnn-har-actitracker/</guid>
+      <guid>http://cseweb.ucsd.edu/~gmahajan/post/cnn-har-actitracker/</guid>
       <description>&lt;p&gt;In this post&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a class=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, we will discuss how to build a architecture for Human Activity Recognition using Convolution Neural Network. &lt;a href=&#34;https://github.com/gomahajan/har-actitracker&#34;&gt;Link to code&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -36,8 +36,8 @@
 
 &lt;p&gt;Data for some activities in the dataset:&lt;/p&gt;
 
-&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://gomahajan.github.io/img/har-cnn-actitracker/walking.png&#34; alt=&#34;&#34;&gt;&lt;/figure&gt;
-&lt;figure&gt;&lt;img src=&#34;https://gomahajan.github.io/img/har-cnn-actitracker/lying-down.png&#34; alt=&#34;&#34;&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;http://cseweb.ucsd.edu/~gmahajan/img/har-cnn-actitracker/walking.png&#34; alt=&#34;&#34;&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;img src=&#34;http://cseweb.ucsd.edu/~gmahajan/img/har-cnn-actitracker/lying-down.png&#34; alt=&#34;&#34;&gt;&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;architecture&#34;&gt;Architecture&lt;/h1&gt;
 
@@ -211,10 +211,10 @@ We print the accuracy on the training set for each epoch.&lt;/p&gt;
     
     <item>
       <title>Finding Regression Function</title>
-      <link>https://gomahajan.github.io/post/finding-regression-function/</link>
+      <link>http://cseweb.ucsd.edu/~gmahajan/post/finding-regression-function/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://gomahajan.github.io/post/finding-regression-function/</guid>
+      <guid>http://cseweb.ucsd.edu/~gmahajan/post/finding-regression-function/</guid>
       <description>&lt;p&gt;In this post, we will discuss how the regression function for squared error loss function is &lt;span  class=&#34;math&#34;&gt;\(f(x)=E(Y|X=x)\)&lt;/span&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -252,10 +252,10 @@ the conditional expectation, also known as the &lt;em&gt;regression&lt;/em&gt; f
     
     <item>
       <title>First Few Weeks in PhD</title>
-      <link>https://gomahajan.github.io/post/first-few-weeks-in-phd/</link>
+      <link>http://cseweb.ucsd.edu/~gmahajan/post/first-few-weeks-in-phd/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://gomahajan.github.io/post/first-few-weeks-in-phd/</guid>
+      <guid>http://cseweb.ucsd.edu/~gmahajan/post/first-few-weeks-in-phd/</guid>
       <description>&lt;p&gt;This post discusses the few tips recommended by people for first few weeks in PhD.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -283,10 +283,10 @@ the conditional expectation, also known as the &lt;em&gt;regression&lt;/em&gt; f
     
     <item>
       <title>From Least Squares to Nearest Neighbors</title>
-      <link>https://gomahajan.github.io/post/least-squares-and-nearest-neighbors/</link>
+      <link>http://cseweb.ucsd.edu/~gmahajan/post/least-squares-and-nearest-neighbors/</link>
       <pubDate>Tue, 01 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://gomahajan.github.io/post/least-squares-and-nearest-neighbors/</guid>
+      <guid>http://cseweb.ucsd.edu/~gmahajan/post/least-squares-and-nearest-neighbors/</guid>
       <description>&lt;p&gt;In this post, we will evaluate two simple but powerful prediction methods: the linear model fit by least squares and the \(k\)-nearest-neighbor prediction rule on a simple regression problem.&lt;br&gt;
 &lt;a href=&#34;https://github.com/gmahajanml/linear-to-nearest&#34;&gt;Link to code&lt;/a&gt;&lt;/p&gt;
 
@@ -305,25 +305,25 @@ the conditional expectation, also known as the &lt;em&gt;regression&lt;/em&gt; f
 &lt;p&gt;We first create training data for \(Y=1\), denoted by \(X_{pos}\) and
 \(Y=-1\), denoted by \(X_{neg}\).&lt;/p&gt;
 
-&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://gomahajan.github.io/img/linear_nearest/scenario1.png&#34; alt=&#34;&#34; title=&#34;Scenario 1&#34;&gt;&lt;figcaption&gt;Scenario 1&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;http://cseweb.ucsd.edu/~gmahajan/img/linear_nearest/scenario1.png&#34; alt=&#34;&#34; title=&#34;Scenario 1&#34;&gt;&lt;figcaption&gt;Scenario 1&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://gomahajan.github.io/img/linear_nearest/scenario2.png&#34; alt=&#34;&#34; title=&#34;Scenario 2&#34;&gt;&lt;figcaption&gt;Scenario 2&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;http://cseweb.ucsd.edu/~gmahajan/img/linear_nearest/scenario2.png&#34; alt=&#34;&#34; title=&#34;Scenario 2&#34;&gt;&lt;figcaption&gt;Scenario 2&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;results-for-least-squares&#34;&gt;Results for Least Squares&lt;/h2&gt;
 
 &lt;p&gt;This is how least squares performs on both scenarios.&lt;/p&gt;
 
-&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://gomahajan.github.io/img/linear_nearest/scenario1_linear.png&#34; alt=&#34;&#34; title=&#34;Least squares on Scenario 1&#34;&gt;&lt;figcaption&gt;Least squares on Scenario 1&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;http://cseweb.ucsd.edu/~gmahajan/img/linear_nearest/scenario1_linear.png&#34; alt=&#34;&#34; title=&#34;Least squares on Scenario 1&#34;&gt;&lt;figcaption&gt;Least squares on Scenario 1&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://gomahajan.github.io/img/linear_nearest/scenario2_linear.png&#34; alt=&#34;&#34; title=&#34;Least squares on Scenario 2&#34;&gt;&lt;figcaption&gt;Least squares on Scenario 2&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;http://cseweb.ucsd.edu/~gmahajan/img/linear_nearest/scenario2_linear.png&#34; alt=&#34;&#34; title=&#34;Least squares on Scenario 2&#34;&gt;&lt;figcaption&gt;Least squares on Scenario 2&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;results-for-nearest-neighbors&#34;&gt;Results for Nearest Neighbors&lt;/h2&gt;
 
 &lt;p&gt;This is how nearest neighbors performs for k=10.&lt;/p&gt;
 
-&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://gomahajan.github.io/img/linear_nearest/scenario1_nearest.png&#34; alt=&#34;&#34; title=&#34;Nearest Neighbors on Scenario 1&#34;&gt;&lt;figcaption&gt;Nearest Neighbors on Scenario 1&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;http://cseweb.ucsd.edu/~gmahajan/img/linear_nearest/scenario1_nearest.png&#34; alt=&#34;&#34; title=&#34;Nearest Neighbors on Scenario 1&#34;&gt;&lt;figcaption&gt;Nearest Neighbors on Scenario 1&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://gomahajan.github.io/img/linear_nearest/scenario2_nearest.png&#34; alt=&#34;&#34; title=&#34;Nearest Neighbors on Scenario 2&#34;&gt;&lt;figcaption&gt;Nearest Neighbors on Scenario 2&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;http://cseweb.ucsd.edu/~gmahajan/img/linear_nearest/scenario2_nearest.png&#34; alt=&#34;&#34; title=&#34;Nearest Neighbors on Scenario 2&#34;&gt;&lt;figcaption&gt;Nearest Neighbors on Scenario 2&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
 

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Human Activity Recognition on Gaurav Mahajan</title>
-    <link>https://gomahajan.github.io/tags/human-activity-recognition/</link>
+    <link>http://cseweb.ucsd.edu/~gmahajan/tags/human-activity-recognition/</link>
     <description>Recent content in Human Activity Recognition on Gaurav Mahajan</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Gaurav Mahajan</copyright>
     <lastBuildDate>Sun, 20 Aug 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/human-activity-recognition/" rel="self" type="application/rss+xml" />
+    <atom:link href="/~gmahajan/tags/human-activity-recognition/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Human Activity Recognition using Convolution Neural Network</title>
-      <link>https://gomahajan.github.io/post/cnn-har-actitracker/</link>
+      <link>http://cseweb.ucsd.edu/~gmahajan/post/cnn-har-actitracker/</link>
       <pubDate>Sun, 20 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://gomahajan.github.io/post/cnn-har-actitracker/</guid>
+      <guid>http://cseweb.ucsd.edu/~gmahajan/post/cnn-har-actitracker/</guid>
       <description>&lt;p&gt;In this post&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a class=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, we will discuss how to build a architecture for Human Activity Recognition using Convolution Neural Network. &lt;a href=&#34;https://github.com/gomahajan/har-actitracker&#34;&gt;Link to code&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
@@ -36,8 +36,8 @@
 
 &lt;p&gt;Data for some activities in the dataset:&lt;/p&gt;
 
-&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;https://gomahajan.github.io/img/har-cnn-actitracker/walking.png&#34; alt=&#34;&#34;&gt;&lt;/figure&gt;
-&lt;figure&gt;&lt;img src=&#34;https://gomahajan.github.io/img/har-cnn-actitracker/lying-down.png&#34; alt=&#34;&#34;&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img src=&#34;http://cseweb.ucsd.edu/~gmahajan/img/har-cnn-actitracker/walking.png&#34; alt=&#34;&#34;&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;img src=&#34;http://cseweb.ucsd.edu/~gmahajan/img/har-cnn-actitracker/lying-down.png&#34; alt=&#34;&#34;&gt;&lt;/figure&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;architecture&#34;&gt;Architecture&lt;/h1&gt;
 
