@@ -1,51 +1,65 @@
-* {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+#header {
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  overflow: auto;
 }
 
-#photo{
+#photo {
   float: left;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   border: 3px solid black;
-  color: rgb(20,90,10);
+  color: rgb(20, 90, 10);
+  margin-right: 20px;
 }
 
-.name{
-      font-size: 46px;
-      font-weight: 400;
-      color: rgb(20,90,10);
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #photo {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+  #header {
+    width: auto;
+  }
+  .bio{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
-.qual{
-    font-size: 18px;
-    font-weight: 300;
-    margin-left: 10px;
+.name {
+  font-size: 46px;
+  font-weight: 400;
+  color: rgb(20, 90, 10);
 }
 
-.email{
+.qual {
+  font-size: 18px;
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+.email {
   font-size: 14px;
   font-weight: 300;
   margin-left: 10px;
 }
 
-.headl{
-position: absolute;
-top: 100px;
-    left: 35%;
-    width: 65%;
+article {
+  display: block;
+  margin: 0 auto;
+  max-width: 600px;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
-.bg{
-  height: 300px;
-  width: 100%;
-}
-
-#bio {
-  padding-top: 50px;
-  margin-left: 220px;
+#research {
+  margin-right: 250px;
   height: 200px;
 }
 
@@ -55,21 +69,6 @@ top: 100px;
 
 .place {
   color: #428bca;
-}
-
-#research {
-  margin-right: 250px;
-  height: 200px;
-}
-
-article {
-  position: relative;
-  left: 30%;
-    width: 45%;
-    min-width: 600px;
-  background-color: white;
-  padding: 20px;
-  font-family: 'Roboto', sans-serif;
 }
 
 .image{
