@@ -3,15 +3,16 @@
   width: 720px;
   margin: 0 auto;
   overflow: auto;
+  font-family: 'Roboto', sans-serif;
 }
 
 #photo {
-  float: left;
-  width: 250px;
-  height: 250px;
+  float: right;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  border: 3px solid black;
-  color: rgb(20, 90, 10);
+  /*border: 3px solid black;*/
+  /*color: rgb(20, 90, 10);*/
   margin-right: 40px;
 }
 
@@ -33,20 +34,12 @@
 }
 
 .name {
-  font-size: 46px;
-  font-weight: 400;
-  color: rgb(20, 90, 10);
-}
-
-.qual {
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 25px;
   margin-left: 10px;
+  margin-bottom: 10px;
 }
 
-.email {
-  font-size: 14px;
-  font-weight: 300;
+.normal {
   margin-left: 10px;
 }
 
