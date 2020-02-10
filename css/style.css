@@ -3,7 +3,6 @@
   width: 720px;
   margin: 0 auto;
   overflow: auto;
-  font-family: 'Roboto', sans-serif;
 }
 
 #photo {
@@ -48,12 +47,16 @@
   margin-left: 10px;
 }
 
+body{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  background-color: white;
+}
+
 article {
   display: block;
   margin: 0 auto;
   max-width: 720px;
-  background-color: white;
-  font-family: 'Roboto', sans-serif;
 }
 
 #research {
