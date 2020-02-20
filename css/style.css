@@ -29,6 +29,10 @@
     padding-right: 10px;
   }
 
+  .top-header{
+    margin: 0rem 0 0.5rem;
+  }
+
   .bio{
     display: block;
     margin: 0 auto;
@@ -51,6 +55,8 @@ h1{
   margin: 2rem 0 .5rem;
   font-size: 20px
 }
+
+.top-header{}
 
 article {
   display: block;
