@@ -1,98 +1,105 @@
 #header {
-  display: block;
-  width: 720px;
-  margin: 0 auto;
-  overflow: auto;
+    display: block;
+    width: 720px;
+    margin: 0 auto;
+    overflow: auto;
 }
 
 #photo {
-  float: right;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  margin-right: 40px;
+    float: left;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 40px;
+}
+
+.bio {
+    float: left;
+    margin: 0px 0px 0px 40px;
+}
+
+.top-header {
+    margin: 0rem 0 0.5rem 0;
 }
 
 @media only screen and (max-width: 600px) {
-  /* For mobile phones: */
-  #photo {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-  #header {
-    width: auto;
-  }
-  
-  article{
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .top-header{
-    margin: 0rem 0 0.5rem;
-  }
-
-  .bio{
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-  }
+    /* For mobile phones: */
+    #photo {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+    #header {
+        width: auto;
+    }
+    article {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .top-header {
+        margin: 0rem 0 0.5rem;
+    }
+    .bio {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        float: none;
+    }
 }
 
-body{
-  font-family: Roboto, 'Helvetica Neue', Helvetica, sans-serif;;
-  font-size: 14px;
+body {
+    font-family: Roboto, 'Helvetica Neue', Helvetica, sans-serif;
+    ;
+    font-size: 14px;
 }
 
-p, span{
-  color: #3c4043;
+p,
+span {
+    color: #3c4043;
 }
 
-h1{
-  color: #202124;
-  font-weight: 500;
-  margin: 2rem 0 .5rem;
-  font-size: 20px
+h1 {
+    color: #202124;
+    font-weight: 500;
+    margin: 2rem 0 .5rem;
+    font-size: 20px
 }
-
-.top-header{}
 
 article {
-  display: block;
-  margin: 0 auto;
-  max-width: 720px;
+    display: block;
+    margin: 0 auto;
+    max-width: 720px;
 }
 
 #research {
-  margin-right: 250px;
-  height: 200px;
+    margin-right: 250px;
+    height: 200px;
 }
 
 .time {
-  color: rgb(20,90,10);
+    color: rgb(20, 90, 10);
 }
 
-.margin-left{
-  margin-left: 10px;
+.margin-left {
+    margin-left: 10px;
 }
 
 .place {
-  color: #428bca;
+    color: #428bca;
 }
 
-.image{
-  float: left;
-  max-width: 200px;
-  max-height: 200px;
-  width: auto;
-  height: auto;
+.image {
+    float: left;
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
 }
 
-.description{
-  margin-left: 220px;
+.description {
+    margin-left: 220px;
 }
 
-.clearfix{
-  overflow: auto;
+.clearfix {
+    overflow: auto;
 }
