@@ -39,6 +39,10 @@ a {
     direction: rtl;
 }
 
+ol {
+    list-style-type: none;
+   }
+
 @media only screen and (max-width: 600px) {
     /* For mobile phones: */
     #photo {
