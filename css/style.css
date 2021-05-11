@@ -40,8 +40,12 @@ a {
 }
 
 ol {
-    list-style-type: none;
+    list-style-type: disc;
    }
+
+li {
+    margin: 20px 0;
+  }
 
 @media only screen and (max-width: 600px) {
     /* For mobile phones: */
@@ -88,7 +92,7 @@ h1 {
     color: #202124;
     font-weight: 500;
     margin: 2rem 0 .5rem;
-    font-size: 14px
+    font-size: 16px
 }
 
 article {
@@ -128,4 +132,15 @@ article {
 
 .clearfix {
     overflow: auto;
+}
+
+b {
+    color: #202124;
+    font-weight: 500;
+    margin: 2rem 0 .5rem;
+    font-size: 14px
+}
+
+i{
+    font-weight: 400;
 }
