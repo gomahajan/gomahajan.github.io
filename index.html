@@ -13,11 +13,11 @@
 <body>
     <main>
         <div style="display: table; width: inherit;">
-            <div style="float: left; padding: 20px 30px 0px 50px; width: 42%; height: 60px;">
+            <div class="half" style="float: left; padding: 20px 30px 0px 50px; height: 60px;">
                 <h1 class="top-header" style="text-align: left; font-weight: 500; margin: 0px;">Gaurav Mahajan</h1>
-                <div style="text-align: left;"> <b style="font-weight: 700;">Email:</b> gmahajan@eng.ucsd.edu</div><br>
+                <div class="hidden" style="text-align: left;"> <b style="font-weight: 700;">Email:</b> gmahajan@eng.ucsd.edu</div><br>
             </div>
-            <div style="float: left; padding: 15px 50px 0px 30px; width: 42%">
+            <div class="hidden" style="float: left; padding: 15px 50px 0px 30px; width: 42%">
                 <p style="text-align: right; margin: 5px;">
                     Office 4230,<br> CSE Building<br>
                     La Jolla, CA, 92092
@@ -25,33 +25,28 @@
             </div>
         </div>
         <hr>
-        <article style="margin: 0px 50px 0px 50px;">
+        <article>
             <div style="display: table;">
-                <div style="float: left; width: 42%; margin: 30px 30px 0px 30px;">
+                <div class="half margin30" style="float: left;">
                     <img src="images/p2cropped.jpg" alt="Gaurav's photo" id="photo"></img>
                 </div>
-                <div style="float: left; width: 42%; margin: 30px 30px 0px 30px;">
+                <div class="half margin30" style="float: left;">
                     <p style="margin: 90px 0px 0px 0px;">
                         I am a 5th year PhD student in the <a href="https://cstheory.ucsd.edu/home.html">theory
                             group</a> at
-                        UCSD, where I am advised by <a href="https://cseweb.ucsd.edu/~dasgupta/">Sanjoy Dasgupta</a> and
+                        UCSD advised by <a href="https://cseweb.ucsd.edu/~dasgupta/">Sanjoy Dasgupta</a> and
                         <a href="https://cseweb.ucsd.edu/~slovett/">Shachar Lovett</a>. 
                         <br>
                         <br>
                         I am broadly interested in questions related to learning and have recently worked on problems
-                        related to reinforcement learning and learning theory.
+                        related to reinforcement learning theory and learning theory.
                     </p>
                 </div>
             </div>
             <div style="display: table;">
-                <div style="float: left; width: 42%; margin: 30px 30px 0px 30px;">
+                <div class="half margin30" style="float: left;">
                     <h1 style="margin: 30px 0px 0px 0px;">About Me</h1>
                     <p style="margin: 20px 0px 0px 0px;">
-                        I received a BS
-                        and
-                        MS in Mathematics and Computing from Indian Institute of Technology, Delhi (IITD) advised by <a
-                            href="https://scholar.google.com/citations?hl=en&user=cs1R7C0AAAAJ">Subiman Kundu</a>.<br>
-                        <br>
                         In Summer 2021, I was a research intern working with <a
                             href="https://homes.cs.washington.edu/~sham/">Sham Kakade</a> and <a
                             href="https://people.cs.umass.edu/~akshay/">Akshay Krishnamurthy</a> at Microsoft Research,
@@ -63,14 +58,16 @@
                         <a href="https://jasondlee88.github.io">Jason Lee</a> at <a
                             href="https://simons.berkeley.edu/programs/dl2019">Simons Institute</a>. <br>
                             <br> In the past, I had few fun years working at <a
-                            href="https://powerapps.microsoft.com/en-us/">Microsoft</a> from 2013 to 2017.
+                            href="https://powerapps.microsoft.com/en-us/">Microsoft</a> from 2013 to 2017. I received a BS
+                            and
+                            MS from Indian Institute of Technology, Delhi (IITD).
                     </p>
                 </div>
-                <div style="float: left; width: 42%; margin: 30px 30px 0px 30px;">
+                <div class="half margin30" style="float: left;">
                     <h1 style="margin: 30px 0px 0px 0px;">Research</h1>
                     <p style="margin: 20px 0px 0px 0px;">
-                        I am interested in mathematical foundation of machine learning. <br><br> I focus on designing provable efficient algorithms for various learning problems (<a href="https://arxiv.org/abs/2103.10897">RL with function approximation</a>, <a href="https://arxiv.org/abs/2004.11380">learning halfspaces</a>) and also generally intrigued by global properties of simple local algorithms (<a
-                        href="https://arxiv.org/abs/1908.00261">policy gradients</a>, k-means algorithm, multiplicative weight update). My current research areas include: 1) reinforcement learning, 2) learning theory and 3) unsupervised learning. 
+                        I am interested in mathematical foundation of machine learning. I focus on designing provable efficient algorithms for various learning problems (<a href="https://arxiv.org/abs/2103.10897">RL with large state spaces</a>, <a href="https://arxiv.org/abs/2004.11380">halfspaces</a>) and also generally intrigued by global properties of simple local algorithms (<a
+                        href="https://arxiv.org/abs/1908.00261">policy gradients</a>, k-means algorithm, <a href="https://arxiv.org/abs/2201.03806">multiplicative weight update</a>). My current research areas include: 1) reinforcement learning, 2) learning theory and 3) unsupervised learning. 
                         <br>
                         <br>
                         Currently, I am working on 1) computationally efficient algorithms for learning distributions, 2) computational lower bounds in RL with function approximation and 3) characterization for learnability in PAC model with arbitrary distribution families. 
@@ -84,6 +81,30 @@
             <div>
                 <h1 style="margin: 50px 0px 0px 0px;">New Preprints<a href="#footnote">&ast;</a></h1>
                 <ol>
+                    <!-- <li>
+                        <p>
+                            <a href="">Computational Statistical Gap in Reinforcement Learning</a>
+                            <br> <i>with Daniel Kane, Sihan Lui and Shachar Lovett</i>
+                            <br> <a href="">arxiv</a>
+                        </p>
+                        <p></p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="">Convergence of online k-means</a>
+                            <br> <i>with Sanjoy Dasgupta and Geelon So</i>
+                            <br> <a href="">arxiv</a>
+                        </p>
+                        <p></p>
+                    </li> -->
+                    <li>
+                        <p>
+                            <a href="https://arxiv.org/abs/2201.03806">Learning What To Remember</a>
+                            <br> <i>with Robi Bhattacharjee</i>
+                            <br> <a href="https://arxiv.org/abs/2201.03806">arxiv</a>
+                        </p>
+                        <p></p>
+                    </li>
                     <li>
                         <p>
                             <a href="https://arxiv.org/abs/2111.04746">Realizable Learning is All You Need</a>
