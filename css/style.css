@@ -27,7 +27,7 @@ article {
 }
 
 .top-header {
-    margin: 0rem 0 0.5rem 0;
+    text-align: left;
 }
 
 a {
@@ -64,6 +64,15 @@ li {
 .margin30{
     margin: 30px 30px 0px 30px;
 }
+.margin50{
+    margin: 0px 50px 0px 50px;
+}
+body {
+    font-family: sans-serif;
+    font-size: 1em;
+    margin: 20px;
+    font-weight: 400;
+}
 
 @media only screen and (max-width: 1000px) {
     /* For mobile phones: */
@@ -83,11 +92,13 @@ li {
     .margin30{
         margin: auto;
     }
+    .margin50{
+        margin: auto;
+    }
     .hidden {
         display:none;
     }
     .top-header {
-        margin: 0rem 0 0.5rem;
         text-align: center;
     }
     .bottom-links {
@@ -101,22 +112,15 @@ li {
         width: auto;
     }
     .half {
-        width:100%
+        width: 100%
     }
     main{
-        width: 100%
+        width: 80%
     }
 }
 
 html {
     background-color: #444A60;
-}
-
-body {
-    font-family: sans-serif;
-    font-size: 1em;
-    margin: 20px;
-    font-weight: 400;
 }
 
 p,
