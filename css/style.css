@@ -1,6 +1,6 @@
 #header {
     display: block;
-    width: 1000px;
+    width: 1100px;
     margin: 0 auto;
     overflow: auto;
 }
@@ -16,14 +16,19 @@
 
 .bio {
     float: left;
-            margin: 0px 50px 0px 50px;
-            width: 300px;
+    margin: 0px 50px 0px 50px;
+    width: 300px;
+}
+
+.flowlist {
+    overflow: auto;
+    height: 300px;
 }
 
 article {
     display: block;
     margin: 0px 50px 0px 50px;
-    max-width: 1000px;
+    max-width: 1100px;
 }
 
 .top-header {
@@ -35,12 +40,11 @@ a {
     text-decoration: none;
 }
 
-.bottom-links {
-}
+.bottom-links {}
 
-main{
+main {
     background-color: #fff;
-    width: 1000px;
+    width: 1100px;
     margin: auto
 }
 
@@ -51,74 +55,91 @@ main{
 
 ol {
     list-style-type: disc;
-    padding-left:20px;
-   }
+    padding-left: 20px;
+}
 
-  
-.half{
+
+.half {
     width: 42%
 }
-.margin30{
+
+.margin30 {
     margin: 30px 30px 0px 30px;
 }
-.margin50{
+
+.margin50 {
     margin: 0px 50px 0px 50px;
 }
+
 body {
     font-family: "source sans pro", "open sans", Arial, sans-serif;
     font-size: 1em;
     font-weight: 400;
 }
 
-.pad20{
-    float: left; 
+.pad20 {
+    float: left;
     padding: 20px 30px 0px 50px;
 }
 
-.dtable{
-    display: table; width: inherit;
+.dtable {
+    display: table;
+    width: inherit;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
+
     /* For mobile phones: */
     #photo {
         float: none;
         display: block;
         margin: 0 auto;
     }
+
     #header {
         width: auto;
     }
+
     article {
-        margin:auto;
+        margin: auto;
         padding-left: 10px;
         padding-right: 10px;
     }
-    body{
+
+    body {
         margin: auto
     }
-    .dtable{
-        display: block; width: inherit;
+
+    .dtable {
+        display: block;
+        width: inherit;
     }
-    .pad20{
-        float: none; 
+
+    .pad20 {
+        float: none;
         padding: 20px 30px 0px 0px;
     }
-    .margin30{
+
+    .margin30 {
         margin: 0px 0px 30px 0px;
     }
-    .margin50{
+
+    .margin50 {
         margin: auto;
     }
+
     .hidden {
-        display:none;
+        display: none;
     }
+
     .top-header {
         text-align: center;
     }
+
     .bottom-links {
         text-align: center;
     }
+
     .bio {
         display: block;
         margin: 0 auto;
@@ -126,10 +147,17 @@ body {
         float: none;
         width: auto;
     }
+
     .half {
         width: 100%
     }
-    main{
+
+    .flowlist {
+        overflow: auto;
+        height: auto;
+    }
+
+    main {
         width: auto
     }
 }
@@ -182,6 +210,6 @@ h1 {
     overflow: auto;
 }
 
-i{
+i {
     font-weight: 400;
 }
