@@ -21,6 +21,13 @@
     text-align: right;
 }
 
+.abstract {
+    border: 10px black;
+    padding: 5px;
+    background: lightblue;
+    background-clip: padding-box;
+  }
+
 .bio {
     float: left;
     margin: 0px 50px 0px 50px;
