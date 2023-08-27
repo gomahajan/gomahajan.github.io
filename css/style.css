@@ -42,12 +42,22 @@ article {
 }
 
 a {
+    border-bottom: 1px dotted #848484;
     text-decoration: none;
     /* color: #1772d0; */
     color: inherit;
     /* line-height: 1.3em; */
     /* font-size:1em; */
 }
+
+/* u {
+    border-bottom: 1px dotted #848484;
+    text-decoration: none;
+} */
+
+/* a:hover {
+    text-decoration: underline;
+  } */
 
 .bottom-links {}
 
