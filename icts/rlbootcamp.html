@@ -38,7 +38,34 @@
         <li><em>Markov Decision Process, Value Functions</em></li>
       </ul>
 
+
       <p style="margin: 0.8em 0 0.2em 3em;"><strong>Day 2: Policy Gradient Methods</strong></p>
+       <div style="margin-left: 3em; margin-bottom: 0em;">
+  <details style="font-family: 'Lora', serif;">
+    <summary style="font-weight: bold; font-size: 1em; cursor: pointer;">Setup Instructions</summary>
+    <div style="margin-left: 1em; margin-top: 0.5em;">
+      <p><strong>Step 1: Create a virtual environment</strong></p>
+      <pre style="background-color: #f7f7f7; padding: 8px; border-radius: 5px; overflow-x: auto;">
+python3 -m venv .venv
+source .venv/bin/activate    # on Linux/macOS
+.venv\Scripts\activate.bat   # on Windows
+      </pre>
+
+      <p><strong>Step 2: Install required packages</strong></p>
+      <pre style="background-color: #f7f7f7; padding: 8px; border-radius: 5px; overflow-x: auto;">
+pip install --upgrade pip
+pip install torch
+pip install "gymnasium[classic-control]"
+      </pre>
+
+      <p><strong>Step 3: Verify installation</strong></p>
+      <pre style="background-color: #f7f7f7; padding: 8px; border-radius: 5px; overflow-x: auto;">
+python -c "import torch; print(torch.__version__)"
+python -c "import gymnasium as gym; env = gym.make('CartPole-v1'); print(env)"
+      </pre>
+    </div>
+  </details>
+</div>
       <ul style="list-style-type: circle; margin: 0 0 0.5em 4em; padding-left: 0;">
         <li><em>Environments: CartPole and Pong</em></li>
         <li><em>Vanilla Policy Gradient Algorithm</em></li>
