@@ -4,7 +4,7 @@
 <head>
     <title>Gaurav Mahajan</title>
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="css/style.css?v=3.3">
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=3.4">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -23,9 +23,36 @@
         </header>
         <hr>
         <article>
-            <div class="publication-list">
-                <h1 class="publication-heading">Selected Publications</h1>
-                <ol>
+            <div class="page-sections">
+                <section class="research-summary">
+                    <h1 class="publication-heading">Research</h1>
+                    <p>
+                        I work on the theoretical foundations of learning, with a current focus on language models and
+                        the algorithms used to train, adapt, and interact with them. My current interests include:
+                    </p>
+                    <ol class="research-interests">
+                        <li>
+                            <span><strong>Foundations of Reinforcement Learning.</strong> Post-training improves language
+                            models through reinforcement learning from feedback and interaction, yet we still lack a
+                            clear understanding of when standard algorithms work with rich function approximation, how
+                            they generalize, and when they are computationally efficient. I develop theory to address
+                            these questions and guide more principled and efficient post-training algorithms, with
+                            particular focus on policy-gradient methods such as PPO, generalization under rich function
+                            approximation, and the computational limits of learning from feedback.</span>
+                        </li>
+                        <li>
+                            <span><strong>Learning Language Models Through API Access.</strong> The inner workings of
+                            modern language models are often confidential even when the models themselves are available
+                            through APIs. I investigate whether this access can provably make it easier to learn a new
+                            model, with particular focus on low-rank structure and the connections between classical
+                            sequence models, such as hidden Markov models, and modern language models.</span>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="publication-section">
+                    <h1 class="publication-heading">Selected Publications</h1>
+                    <ol class="publication-entries">
                     <li>
                         <p>
                             <b>Learning Hidden Markov Models Using Conditional Samples</b>
@@ -33,7 +60,6 @@
                             <br> COLT 2023
                             <br> <a href="https://arxiv.org/abs/2302.14753">arxiv</a>
                         </p>
-                        <p></p>
                     </li>
                     <li>
                         <p>
@@ -42,12 +68,10 @@
                             <br> with Daniel Kane, Sihan Liu and Shachar Lovett
                             <br> COLT 2022
 
-                            <br> <a href="talks/ttic0607.mp4" target="_blank">
-                                <font color="red">talk</font>
-                            </a> | <a href="https://arxiv.org/abs/2202.05444">arxiv</a> | <a
+                            <br> <a class="resource-link" href="talks/ttic0607.mp4" target="_blank">talk</a> | <a
+                                href="https://arxiv.org/abs/2202.05444">arxiv</a> | <a
                                 href="https://twitter.com/gauravmahajn/status/1493552416943312902">tweet</a>
                         </p>
-                        <p></p>
                     </li>
                     <li>
                         <p>
@@ -58,7 +82,6 @@
                             <br> <a href="https://arxiv.org/abs/2111.04746">arxiv</a> | <a
                                 href="https://twitter.com/thegautamkamath/status/1458466857229373447">tweet</a>
                         </p>
-                        <p></p>
                     </li>
                     <li>
                         <p>
@@ -69,12 +92,17 @@
                             <br> <a href="http://proceedings.mlr.press/v125/agarwal20a.html">colt</a> | <a
                                 href="https://arxiv.org/abs/1908.00261">arxiv</a>
                         </p>
-                        <p></p>
                     </li>
-                </ol>
-                <h1 class="publication-heading">All Publications</h1>
-                <a href="https://scholar.google.com/citations?hl=en&user=nIWUhXAAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a>
-                <ol>
+                    </ol>
+                </section>
+
+                <section class="publication-section">
+                    <div class="section-heading-row">
+                        <h1 class="publication-heading">All Publications</h1>
+                        <a class="section-link"
+                            href="https://scholar.google.com/citations?hl=en&amp;user=nIWUhXAAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">Google Scholar</a>
+                    </div>
+                    <ol class="publication-entries">
                     <li>
                         <p>
                             <b>Cloning is as Hard as Learning for Stabilizer States</b>
@@ -82,7 +110,6 @@
                             <br> COLT 2026, QCTiP 2026, TQC 2026
                             <br> <a href="https://arxiv.org/abs/2604.15269">arxiv</a>
                         </p>
-                        <p></p>
                     </li>
                     <li>
                         <p>
@@ -90,7 +117,6 @@
                             <br> with Adam Bene Watts, John Bostanci, Matthias Caro, Daniel Grier and Sihan Liu
                             <br> Under submission, 2026
                         </p>
-                        <p></p>
                     </li>
                      <li>
                     <p>
@@ -99,7 +125,6 @@
                         <br>Under submission, 2025
                         <br> <a href="https://arxiv.org/abs/2405.09525">arxiv</a>
                     </p>
-                    <p></p>
                 </li>
                      <li>
                         <p>
@@ -108,7 +133,6 @@
                             <br> ALT 2025
                             <br> <a href="https://arxiv.org/abs/2302.06285">arxiv</a>
                         </p>
-                        <p></p>
                     </li>
                     <li>
                         <p>
@@ -117,7 +141,6 @@
                             <br> COLT 2023
                             <br> <a href="https://arxiv.org/abs/2302.14753">arxiv</a>
                         </p>
-                        <p></p>
                     </li>
                     <li>
                         <p>
@@ -126,7 +149,6 @@
                             <br> COLT 2023
                             <br> <a href="https://arxiv.org/abs/2302.12940">arxiv</a>
                         </p>
-                        <p></p>
                     </li>
                     <li>
                         <p>
@@ -138,7 +160,6 @@
                             <br> <a href="https://arxiv.org/abs/2202.05444">arxiv</a> | <a
                                 href="https://twitter.com/gauravmahajn/status/1493552416943312902">tweet</a>
                         </p>
-                        <p></p>
                     </li>
                     <li>
                         <p>
@@ -149,7 +170,6 @@
                             <br> <a href="https://arxiv.org/abs/2111.04746">arxiv</a> | <a
                                 href="https://twitter.com/thegautamkamath/status/1458466857229373447">tweet</a>
                         </p>
-                        <p></p>
                     </li>
                     <li>
                         <p>
@@ -158,7 +178,6 @@
                             <br> ALT 2022
                             <br> <a href="https://arxiv.org/abs/2201.03806">arxiv</a>
                         </p>
-                        <p></p>
                     </li>
                     <li>
                         <p>
@@ -168,7 +187,6 @@
                             <br>
                             <a href="https://arxiv.org/abs/2202.10640">arxiv</a>
                         </p>
-                        <p></p>
                     </li>
                     <li>
                         <p>
@@ -180,7 +198,6 @@
                                 href="https://arxiv.org/abs/2103.10897">arxiv</a> | <a
                                 href="https://twitter.com/CsabaSzepesvari/status/1437583932678082560">tweet</a>
                         </p>
-                        <p></p>
                     </li>
                     <li>
                         <p>
@@ -191,7 +208,6 @@
                             <br> <a href="http://jmlr.org/papers/v22/19-736.html">jmlr</a> | <a
                                 href="https://arxiv.org/abs/1908.00261">arxiv</a>
                         </p>
-                        <p></p>
                     </li>
                     <li>
                         <p>
@@ -202,7 +218,6 @@
                             <br> <a href="https://ieeexplore.ieee.org/abstract/document/9317934">focs</a> | <a
                                 href="https://arxiv.org/abs/2004.11380">arxiv</a>
                         </p>
-                        <p></p>
                     </li>
                     <li>
                         <p>
@@ -213,7 +228,6 @@
                             <br> <a href="http://proceedings.mlr.press/v125/agarwal20a.html">colt</a> | <a
                                 href="https://arxiv.org/abs/1908.00261">arxiv</a>
                         </p>
-                        <p></p>
                     </li>
                     <li>
                         <p>
@@ -223,7 +237,6 @@
                             <br> COLT 2020
                             <br><a href="https://arxiv.org/abs/2001.05497">arxiv</a>
                         </p>
-                        <p></p>
                     </li>
                     <li>
                         <p>
@@ -233,18 +246,52 @@
                             <br> NeurIPS 2020
                             <br> <a href="https://arxiv.org/abs/2002.07125">arxiv</a>
                         </p>
-                        <p></p>
                     </li>
-                </ol>
-                <h1 class="publication-heading">Talks</h1>
-                <ol>
+                    </ol>
+                </section>
+
+                <section class="publication-section">
+                    <h1 class="publication-heading">Lecture Notes</h1>
+                    <ol class="publication-entries">
+                    <li>
+                        <p>
+                            <b>Reinforcement Learning Theory</b>
+                            <br> ICTS Reinforcement Learning Bootcamp, 2025
+                            <br> <a href="icts/notes/complete.pdf">lecture notes</a> | <a
+                                href="icts/rlbootcamp.html">course page</a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Quantum Codes and Applications to Complexity</b>
+                            <br> CPSC 648, Yale University, Fall 2024
+                            <br> <a href="courses/cspc648/notes/notes.pdf">lecture notes</a> | <a
+                                href="courses/cspc648/cspc648.html">course page</a>
+                        </p>
+                    </li>
+                    </ol>
+                </section>
+
+                <section class="publication-section talks-section">
+                    <h1 class="publication-heading">Talks</h1>
+                    <ol class="publication-entries">
+                    <li>
+                        <p><b>Learning Low-Rank Language Models with Conditional Queries</b> <a class="resource-link"
+                                href="slides/low-rank-language-models.pdf" target="_blank">(slides)</a>
+                            <br>Flatiron Institute, New York
+                            <br>Toulouse School of Economics
+                            <br>Cal Poly San Luis Obispo
+                            <br>University of Victoria
+                            <br>Barnard College
+                            <br>Oberlin College
+                            <br>University of Birmingham
+                        </p>
+                    </li>
                     <li>
                         <p><b>Computational-Statistical Gaps in
-                                Reinforcement Learning:</b> <a href="talks/ttic0607.mp4" target="_blank">
-                                <font color="red">(talk)</font>
-                            </a> <a href="slides/ttic.pdf" target="_blank">
-                                <font color="red">(slides)</font>
-                            </a>
+                                Reinforcement Learning:</b> <a class="resource-link" href="talks/ttic0607.mp4"
+                                target="_blank">(talk)</a> <a class="resource-link" href="slides/ttic.pdf"
+                                target="_blank">(slides)</a>
 
                             <br>Microsoft Research New York Seminar
                             <br>
@@ -262,26 +309,21 @@
                             <br> Berkeley RL Reading Group (Jiantao Jiao's group)
 
                         </p>
-                        <p></p>
                     </li>
                     <li>
                         <p><b> Equivalence between Realizable and Agnostic
-                                Learning: </b> <a href="slides/cornell.pdf" target="_blank">
-                                <font color="red">(slides)</font>
-                            </a>
+                                Learning: </b> <a class="resource-link" href="slides/cornell.pdf"
+                                target="_blank">(slides)</a>
                             <br> Cornell
                             Theory Seminar
                             <br>
                             MSR New York ML Reading Group
                         </p>
-                        <p></p>
                     </li>
                     <li>
                         <p><b>Theory
-                                of Generalization in Reinforcement Learning: </b> <a href="slides/rltheory.pdf"
-                                target="_blank">
-                                <font color="red">(slides)</font>
-                            </a>
+                                of Generalization in Reinforcement Learning: </b> <a class="resource-link"
+                                href="slides/rltheory.pdf" target="_blank">(slides)</a>
                             <br>
                             RL
                             Theory Seminar
@@ -293,12 +335,9 @@
                             Theory
                             Seminar
                         </p>
-                        <p></p>
                     </li>
-                </ol>
-                <br>
-                <br>
-                <br>
+                    </ol>
+                </section>
             </div>
         </article>
     </main>
